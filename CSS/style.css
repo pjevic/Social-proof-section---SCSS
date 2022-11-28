@@ -1,0 +1,180 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+h1 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  overflow: hidden;
+  height: 100vh;
+  position: relative; }
+
+.pattern__1 {
+  display: block;
+  background: url(../images/bg-pattern-top-desktop.svg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  left: -56%; }
+
+.pattern__2 {
+  display: block;
+  background: url(../images/bg-pattern-bottom-desktop.svg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: -100; }
+
+.proof {
+  width: 111rem; }
+  .proof__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; }
+  .proof__row--1 {
+    display: flex;
+    margin-bottom: 4rem; }
+  .proof__row--2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .proof__side-left {
+    width: 50%;
+    margin-bottom: 4.2rem; }
+  .proof__heading {
+    color: #502050;
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 0.9;
+    letter-spacing: -1px;
+    margin-right: 10rem;
+    margin-bottom: 2.8rem; }
+  .proof__paragraph {
+    color: #937b92;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    padding-right: 10rem; }
+  .proof__right {
+    flex: 1;
+    display: block;
+    width: 100%; }
+  .proof__stars-box {
+    width: 44rem;
+    background-color: #f7f2f7;
+    color: #502050;
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding: 1.8rem 3rem;
+    border-radius: 0.5rem;
+    display: flex; }
+    .proof__stars-box:not(:last-child) {
+      margin-bottom: 1.6rem; }
+    .proof__stars-box--1 {
+      margin-top: 2.9rem;
+      margin-left: 1.5rem; }
+    .proof__stars-box--2 {
+      margin-left: 6.5rem; }
+    .proof__stars-box--3 {
+      margin-left: 11rem; }
+    .proof__stars-box--sub {
+      display: flex;
+      margin-bottom: 1rem; }
+  .proof__icon {
+    height: 2rem;
+    width: 2rem;
+    display: block;
+    background: url(../images/icon-star.svg) no-repeat;
+    margin-right: 0.5rem; }
+  .proof__testimonial {
+    width: 35rem;
+    background-color: #502050;
+    color: #ffffff;
+    border-radius: 1rem;
+    padding: 3.9rem 3rem; }
+    .proof__testimonial--2 {
+      margin-top: 3rem; }
+    .proof__testimonial--3 {
+      margin-top: 6rem; }
+    .proof__testimonial:not(:last-child) {
+      margin-bottom: 1rem; }
+  .proof__testimonial-container--main {
+    display: flex; }
+  .proof__testimonial-container--sub {
+    margin-bottom: 2.5rem; }
+  .proof__avatar {
+    height: 4.2rem;
+    border-radius: 50%;
+    margin-right: 2rem; }
+  .proof__name {
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 0.5rem 0; }
+  .proof__verified {
+    color: #ee68a4;
+    font-size: 1.7rem; }
+  .proof__testimonial-paragraph {
+    font-size: 1.65rem;
+    line-height: 1.4;
+    padding-right: 0.6rem; }
+
+@media screen and (max-width: 1200px) {
+  body {
+    height: auto; }
+  .pattern {
+    background: none; }
+  .proof {
+    width: 100%;
+    padding: 2.3rem; }
+    .proof__row--1 {
+      display: flex;
+      flex-direction: column; }
+    .proof__row--2 {
+      display: flex;
+      flex-direction: column; }
+    .proof__side-left {
+      width: 100%; }
+    .proof__heading {
+      margin: 0;
+      margin-top: 5rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      font-size: 4rem;
+      line-height: 0.8; }
+    .proof__paragraph {
+      padding: 0;
+      font-size: 1.8rem;
+      text-align: center; }
+    .proof__right {
+      display: block;
+      width: 100%; }
+    .proof__stars-box {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center; }
+      .proof__stars-box:not(:last-child) {
+        margin-bottom: 1.6rem; }
+    .proof__testimonial {
+      width: 100%;
+      margin: 0; }
+      .proof__testimonial:not(:last-child) {
+        margin-bottom: 1.5rem; }
+    .proof__testimonial-container--main {
+      display: flex; } }

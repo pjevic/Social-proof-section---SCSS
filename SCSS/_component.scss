@@ -1,0 +1,267 @@
+// Colors
+
+$--color-p-very-dark-magenta: #502050;
+$--color-p-soft-pink: #ee68a4;
+
+$--color-n-dark-grayish-magenta: #937b92;
+$--color-n-light-grayis-magenta: #f7f2f7;
+$--color-n-white: #ffffff;
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  overflow: hidden;
+
+  height: 100vh;
+
+  position: relative;
+}
+
+.pattern {
+  &__1 {
+    display: block;
+    background: url(../images/bg-pattern-top-desktop.svg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: -10%;
+    left: -56%;
+  }
+
+  &__2 {
+    display: block;
+    background: url(../images/bg-pattern-bottom-desktop.svg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: -100;
+  }
+}
+
+.proof {
+  width: 111rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+  }
+
+  &__row {
+    &--1 {
+      display: flex;
+      margin-bottom: 4rem;
+    }
+    &--2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__side-left {
+    width: 50%;
+    margin-bottom: 4.2rem;
+  }
+
+  &__heading {
+    color: $--color-p-very-dark-magenta;
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 0.9;
+    letter-spacing: -1px;
+    margin-right: 10rem;
+    margin-bottom: 2.8rem;
+  }
+
+  &__paragraph {
+    color: $--color-n-dark-grayish-magenta;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    padding-right: 10rem;
+  }
+  &__right {
+    flex: 1;
+    display: block;
+
+    width: 100%;
+  }
+
+  &__stars-box {
+    width: 44rem;
+    background-color: $--color-n-light-grayis-magenta;
+    color: $--color-p-very-dark-magenta;
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding: 1.8rem 3rem;
+    border-radius: 0.5rem;
+
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+    &--1 {
+      margin-top: 2.9rem;
+      margin-left: 1.5rem;
+    }
+    &--2 {
+      margin-left: 6.5rem;
+    }
+    &--3 {
+      margin-left: 11rem;
+    }
+
+    &--sub {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    display: block;
+    background: url(../images/icon-star.svg) no-repeat;
+    margin-right: 0.5rem;
+  }
+
+  &__testimonial {
+    width: 35rem;
+    background-color: $--color-p-very-dark-magenta;
+    color: $--color-n-white;
+    border-radius: 1rem;
+    padding: 3.9rem 3rem;
+
+    &--2 {
+      margin-top: 3rem;
+    }
+
+    &--3 {
+      margin-top: 6rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__testimonial-container {
+    &--main {
+      display: flex;
+    }
+
+    &--sub {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__avatar {
+    height: 4.2rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 0.5rem 0;
+  }
+  &__verified {
+    color: $--color-p-soft-pink;
+    font-size: 1.7rem;
+  }
+
+  &__testimonial-paragraph {
+    font-size: 1.65rem;
+    line-height: 1.4;
+    padding-right: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    height: auto;
+  }
+
+  .pattern {
+    background: none;
+  }
+
+  .proof {
+    width: 100%;
+    padding: 2.3rem;
+
+    &__row {
+      &--1 {
+        display: flex;
+        flex-direction: column;
+      }
+      &--2 {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__side-left {
+      width: 100%;
+    }
+
+    &__heading {
+      margin: 0;
+      margin-top: 5rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      font-size: 4rem;
+      line-height: 0.8;
+    }
+
+    &__paragraph {
+      padding: 0;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    &__right {
+      display: block;
+
+      width: 100%;
+    }
+
+    &__stars-box {
+      width: 100%;
+
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 1.6rem;
+      }
+    }
+
+    &__testimonial {
+      width: 100%;
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &__testimonial-container {
+      &--main {
+        display: flex;
+      }
+    }
+  }
+}
